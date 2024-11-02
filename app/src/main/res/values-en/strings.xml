@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shikanoko</string>
+    <string name="menu_db_name">Database</string>
+    <string name="menu_main_name">Home</string>
+    <string name="menu_testing_name">Testing</string>
+    <string name="db_word_name">Word</string>
+    <string name="db_meaning_name">Meaning</string>
+    <string name="db_add_button">Add a word</string>
+    <string name="testing_check_btn">Check the answer</string>
+</resources>
