@@ -42,6 +42,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.shikanoko.study.screens.DBScreen
 import com.shikanoko.study.screens.MainScreen
+import com.shikanoko.study.screens.KanjiScreen
 import com.shikanoko.study.screens.TestingScreen
 import com.shikanoko.study.ui.theme.ShikanokoTheme
 import kotlinx.coroutines.launch
@@ -91,6 +92,14 @@ class MainActivity : ComponentActivity() {
                                     composableScope.launch { drawerState.close() }
                                 }
                             )
+                            NavigationDrawerItem(
+                                label = { Text(text = "KanjiRest") },
+                                selected = false,
+                                onClick = { navController.navigate(KanjiScreen.route)
+                                    currentScreen = KanjiScreen
+                                    composableScope.launch { drawerState.close() }
+                                }
+                            )
                             // ...other drawer items
                         }
                     }
@@ -105,6 +114,9 @@ class MainActivity : ComponentActivity() {
                             }
                             composable (route = DBScreen.route) {
                                 DBScreen()
+                            }
+                            composable (route = KanjiScreen.route) {
+                                KanjiScreen()
                             }
                         }
                     }

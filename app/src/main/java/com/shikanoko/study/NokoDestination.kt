@@ -16,3 +16,7 @@ object DBScreen : NokoDestination {
     override val route = "DBScreen"
 }
 
+object KanjiScreen : NokoDestination {
+    override val route = "KanjiScreen"
+}
+
