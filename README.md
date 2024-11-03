@@ -1,4 +1,4 @@
-# Shikanoko
+# Shikanoko_online
 
 Android application for record, remember, and study new words, as well as test your knowledge.
 
@@ -20,6 +20,9 @@ Android application for record, remember, and study new words, as well as test y
 * Russian
 * English
 * Japanese (in the future)
+
+## Difference with offline version
+* Added function of accessing the server via REST API
 
 ### Credits
 * Programmers: [Itachi aka me](https://github.com/ltachiUchiha)
